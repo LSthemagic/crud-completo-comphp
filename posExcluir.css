@@ -1,0 +1,12 @@
+body{
+    padding: 0;
+    margin: 0;
+    background: url(laranjinha.jpg);
+}
+a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type:none;
+    display: inline-block;
+}

@@ -1,0 +1,13 @@
+body{
+    background-image: url(laranja.avif);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    backface-visibility: visible;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+a{
+    color: white;
+}

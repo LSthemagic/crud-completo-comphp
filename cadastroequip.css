@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(laranjinha.jpg);
+    backface-visibility: hidden;
+    background-attachment: fixed;
+    background-size: auto;
+    background-attachment: local;
+    background-origin: padding-box;
+
+}
+
+a{
+    font-display: unset;
+    font-style: white;
+    
+}
+
+.mb-3{
+    text-align: center;
+    margin-top: 100px;
+    position: relative; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 20%;
+    
+    
+}
+
+.butoes{
+   position: absolute;
+   left: 44%;
+    
+    
+}
+
+h1{
+    text-align: center;
+    padding-top: 100px;
+    
+}

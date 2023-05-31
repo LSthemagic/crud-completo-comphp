@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title>Cadastro</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="cads.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <img src="logo-responsivo.png" alt="logo-responsivo senai">
+    <form class="forms" name="cadastro"  method="POST" action="cad_user.php" onsubmit=" return validar()">
+    
+        <label >Nome</label>
+        <input type="text" name="f_nome" id="f_inome" size="25px" maxlength="50" placeholder="Seu nome"><br>
+
+        <label>Senha</label>
+        <input type="password" name="f_senha" id="f_isenha" size="25px" maxlength="8" placeholder="Sua senha"><br>
+
+        <label>Data de Nascimento</label> 
+        <input type="text" name="f_data" id="f_idata" size="25px" onkeyup="mascara_data(this, this.value)" maxlength="10" placeholder="Sua data de nascimento"><br>
+    
+        <label>Email</label>
+        <input type="text" name="f_email" id="f_iemail" size="25px" maxlength="50" placeholder="Seu e-mail"><br>
+        
+        <label>Cpf</label>
+        <input type="text" name="f_cpf" id="f_icpf" size="25px" maxlength="11" placeholder="Seu CPF"><br>
+        
+        <label>telefone</label>
+        <input type="text" name="f_tel" id="f_iphone" size="25px" maxlength="11" placeholder="Seu telefone"><br>
+
+        <input type="submit" value="ENVIAR"  class="button">
+        <script src="validar.js"></script>
+
+     </form>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script> <!--Instalação Jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script> <!--Instalação plugin-->
+
+
+    <script>
+          $('#f_idata').mask('00/00/0000');
+          $('#f_iphone').mask('(00) 00000-0000');
+          $('#f_icpf').mask('000.000.000-00', {reverse: true});
+    </script>
+
+</body>
+</html>

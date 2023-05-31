@@ -1,0 +1,171 @@
+body{
+    padding: 0; /*ESPAÇAMENTO*/
+    margin: 0; /*MARGEM*/
+    box-sizing: border-box; /*BORDA DO CORPO DA PÁGINA*/
+    background: aliceblue;
+}
+section{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: small;
+}
+
+:root{
+    --cor-do-fundo: rgb(0, 0, 0) ;
+    --cor-hover: rgb(7, 77, 228);
+    --cor-da-fonte:  rgb(238, 241, 231);
+}
+
+
+.dp-menu ul{
+    list-style-type: none; /*pontos da lista*/
+    padding: right;
+    
+}
+p{
+    
+    font-size: 21px;
+}
+.ultimoParagrafo{
+    padding-top: 20px;
+}
+.dp-menu ul{
+    
+    background-color: var(--cor-do-fundo);
+}
+
+.dp-menu ul li {
+    display: inline;
+    position: relative;
+}
+
+.dp-menu ul li a {
+    color: var(--cor-da-fonte);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    transition: background .3s;
+}
+
+.dp-menu ul li a:hover{
+
+    background-color: var(--cor-hover);
+}
+
+/*sub menu*/
+
+.dp-menu ul ul {
+    display: none;
+    left: 0;
+    position: absolute;
+}
+
+.dp-menu ul li:hover ul {
+
+    display: block;
+}
+
+.dp-menu ul ul {
+
+    width: 150px;
+}
+
+.dp-menu ul ul li a {
+
+    display: block;
+
+}
+
+section{
+    width: 100%; /*LARGURA*/
+    height: 500px; /*ALTURA*/
+    text-align:left; /*CENTRALIZA TEXTO*/
+    padding: 40px 4%; /*ESPAÇAMENTO*/
+    font-family: roboto; /*tipo de fonte*/
+    font-size:large;
+    color: rgb(0, 0, 0);
+    
+
+    background-position: center; /*CENTRALIZAR PLANO DE FUNDO*/ 
+    background-size: cover; /*TAMANHO DO PLANO DE FUNDO PADRÃO,SEM ALTERAÇÃO DE TAMANHO*/
+    background-repeat: no-repeat; /*FIXA A IMAGEM ESCOLHIDA NO BLOCO*/
+    background-attachment: fixed; /*FIXA A IMAGEM NA SEÇÃO*/
+}
+
+.row{clear:both}
+
+.column{
+    width: 50%;
+    float: left;
+}
+
+section h1{
+    display: block;
+    text-align: center;
+    top: 10px;
+    margin-bottom: 0px;  /*MOLDURA DA MARGEM*/
+}
+
+section a{
+    text-decoration: none;
+    color: mediumvioletred;
+}
+
+section img{
+
+    padding-top: 4%;
+    padding-left: 20%;
+    
+    display: inline;
+}
+
+section h3{
+    color: sienna;
+    margin-top: 10px;
+    margin: 0px;
+   
+}
+/*th-of-type é uma pseudoclasse para trabalhar com posição de elementos*/
+section:nth-of-type(1) h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background: black;
+    font-size: 60px;
+    font-weight: 400;
+    margin-top: 150px;
+    padding: 0;
+    width: 1500px;
+    position: relative;
+} 
+
+.center {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  } 
+  
+
+/*th-of-type é uma pseudoclasse para trabalhar com posição de elementos*/
+section:nth-of-type(1) h1{
+    color: white;
+    font-size: 60px;
+    font-weight: 400;
+    margin-top: 150px;
+}
+
+section:nth-of-type(1){
+    background-image: url(imagens//04.jpg);
+    color: white;
+    font-size: 60px;
+}
+
+section:nth-of-type(3){
+    background-image: url(imagens/05.jpg);
+}
+
+section:nth-of-type(5){
+    background-image: url(imagens/06.jpg);
+}
+
+section:nth-of-type(7){
+    background-image: url(imagens/03.webp);
+}
